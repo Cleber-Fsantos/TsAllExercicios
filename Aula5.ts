@@ -14,7 +14,7 @@ import {
     facaAteDif0,
     calcImc,
     mostrarMenu
-} from './moduloExercicios.js';
+} from './moduloExercicios';
 
 mostrarMenu();
 
