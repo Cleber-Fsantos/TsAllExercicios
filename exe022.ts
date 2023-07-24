@@ -16,7 +16,7 @@ let nota3: number  = parseInt(prompt('Digite a terceira nota: '));
 let nota4: number  = parseInt(prompt('Digite a quarta nota: '));
 
 
-let media = (nota1 + nota2 + nota3 + nota4) / 4;
+let media:number = (nota1 + nota2 + nota3 + nota4) / 4;
 if (media >= 7){
     console.log('\n\nAPROVADO:\nsua média foi de: ' + media);
 } else if((media < 7) && (media >= 5)){
