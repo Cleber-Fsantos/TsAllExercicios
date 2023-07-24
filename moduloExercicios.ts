@@ -3,35 +3,35 @@ import promptSync from "prompt-sync";
 let prompt = promptSync();
 
 // 1. Imprimir números de 1 a 10
-export function print_1_10(){
+export function print_1_10(): void{
     for (let indice:number = 1; indice <= 10; indice++){
         console.log(`Número ${indice}`)
     }    
 }
 
 // 2. Imprimir números pares de 1 a 10.
-export function printPar_1_10(){
+export function printPar_1_10(): void{
     for (let indice:number = 2; indice <= 10; indice+=2){
         console.log(`Número ${indice}`)
     }
 }
 
 // 3. Faça um programa que imprima os números ímpares de 0 a 50;
-export function printImpar_0_50(){
+export function printImpar_0_50(): void{
     for (let indice:number = 1; indice <= 50; indice+=2){
         console.log(`Número ${indice}`)
     }
 }
 
 // 4. Tabuada aleatória de 0 a 10.
-export function printTabuada_0_10(tabuada_:number){
+export function printTabuada_0_10(tabuada_:number): void{
     for (let indice:number = 0; indice <= 10; indice++){
         console.log(`${tabuada_} X ${indice} = ${indice * tabuada_}`)
     }
 }
 
 // 5. Imprimir os primeiros 10 números da sequência de Fibonacci.
-export function printFibonacci_10(){
+export function printFibonacci_10(): void{
     let numero1:number  = 0
     let numero2:number = 1
     let fibo:number;
@@ -45,7 +45,7 @@ export function printFibonacci_10(){
 }
 
 // 6. Imprimir números pares de 0 a 20 utilizando o loop while
-export function printParWhile_0_20(){
+export function printParWhile_0_20(): void{
     let indice:number = 0;
     while (indice <= 20){
         console.log(`${indice}`)
@@ -54,7 +54,7 @@ export function printParWhile_0_20(){
 }
 
 // 7. Calcular a soma dos números de 1 a 100 utilizando a estrutura while.
-export function CalcSoma_1_100(){
+export function CalcSoma_1_100(): void{
     let indice:number = 1;
     let soma:number = 0;
     while (indice <= 100){
@@ -65,7 +65,7 @@ export function CalcSoma_1_100(){
 }
 
 // 8. receba a idade do usuário, enquanto < 18 anos continue até > 18.
-export function confirmarIdade(){
+export function confirmarIdade(): void{
     let idade:number=0;
     while (idade < 18){
         idade = parseInt(prompt('Qual a sua idade? '));
@@ -74,7 +74,7 @@ export function confirmarIdade(){
 }
 
 // 9. receba um número do usuário e mostre a contagem regressiva até 0.
-export function contRegressiva(){
+export function contRegressiva(): void{
     let NumeroUser:number = parseInt(prompt('Digite um Número e veja a contagem regressiva até 0: '));
     while (NumeroUser >= 0){
         console.log(`${NumeroUser}`)
@@ -83,7 +83,7 @@ export function contRegressiva(){
 }
 
 // 10. Receba um número do usuário enquanto for diferente de 0.
-export function facaAteDif0(){
+export function facaAteDif0(): void{
     let NumeroUser:number;
     do
     {
@@ -93,7 +93,7 @@ export function facaAteDif0(){
 }
 
 // 11. Cálculo do IMC
-export function calcImc(){
+export function calcImc(): void{
     console.log('\nExercicio 011 - CÁLCULO IMC \n');
 
     // const user: { name: string, age: number } = {name: "Cleiton",age: 50,};
@@ -126,7 +126,7 @@ export function calcImc(){
 
 
 
-export function mostrarMenu(){
+export function mostrarMenu(): void{
     console.log("\n\n#############################################################################################################################")
     console.log("##                                                                                                                         ##")
     console.log("##                                                LISTA DE EXERCICIOS                                                      ##")
