@@ -1,9 +1,9 @@
 import promptSync from "prompt-sync";
 let prompt = promptSync();
 let resposta:string;
-let exit:string = 'sair'
+
 import { 
-    print_1_10, 
+    print_1_10,
     printPar_1_10,
     printImpar_0_50,
     printTabuada_0_10,
@@ -57,13 +57,12 @@ do{
         case '11':
             calcImc();
             break;
-        case exit.toLocaleLowerCase():
+        case 'sair':
             console.log('\nObrigado por utilziador nosso gerador de exercícios :) Volte Sempre !!!\n');
             break;
         default:
             console.log('\nValor Digitado não corresponde a nenhum exercicio\n');
-            console.log(exit, exit.toLocaleLowerCase());
             break;
         }
     
-}while(resposta != exit)
+}while(resposta != 'sair')
